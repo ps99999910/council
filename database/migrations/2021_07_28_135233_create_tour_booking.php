@@ -17,7 +17,7 @@ class CreateTourBooking extends Migration
         Schema::create('tour_bookings', function (Blueprint $table) {
             $table->id()->unique();
             $table->string('year');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('pos_code')->nullable();
             $table->string('mobile')->nullable();
             $table->string('student_name')->nullable();

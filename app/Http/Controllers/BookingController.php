@@ -25,7 +25,7 @@ class BookingController extends Controller
             'mobile' => 'required',
             'kindergarten' => 'required',
           //  'school' => 'required',
-            'email' => ['required', Rule::unique('tour_bookings', 'email')]
+            'email' => ['required', 'email', Rule::unique('tour_bookings', 'email')]
 //            'body' => 'required',
 //            'category_id' => ['required', Rule::exists('categories', 'id')]
         ]);
