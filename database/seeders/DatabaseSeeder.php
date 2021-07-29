@@ -2,11 +2,8 @@
 
 namespace Database\Seeders;
 
-<<<<<<< HEAD
 use App\Models\TourDatesConfig;
 use App\Models\TourBooking;
-=======
->>>>>>> 2bf285d (First Commit)
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,7 +16,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-<<<<<<< HEAD
 
 
         $acad_year = "2021-22";
@@ -49,7 +45,5 @@ class DatabaseSeeder extends Seeder
 
 
         TourBooking::factory(20)->create();
-=======
->>>>>>> 2bf285d (First Commit)
     }
 }
